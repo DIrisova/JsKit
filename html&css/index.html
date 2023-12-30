@@ -1,0 +1,193 @@
+<!-- 
+1 Introduction to HTML 🌎
+    HTML (Hypertext Markup Language) uses tags to structure web content. It forms the foundation of a website. CSS (Cascading Style Sheets) adds style, such as design and colors, to the web pages. To work with HTML and CSS, a modern web browser like Chrome, Firefox, Edge, or Safari is needed.
+2  hyperlinks 👈
+3  images 🖼️
+4  audio 🔊
+5  video 🎥
+6  favicons 🗿
+7  text formatting 💬
+8  span & div 🏁
+9  lists 📄
+10 tables 📊
+11 buttons 🔘
+12 forms 📝
+13 headers & footers 🤯
+14 Introduction to CSS 🎨
+15 colors 🖌️
+16 fonts 🔤
+17 borders 🖼
+18 shadows 👥
+19 margins ↔️
+20 float 🎈
+21 overflow 🌊
+22 display property 🧱
+23 height and width 📏
+24 positions 🎯
+25 background images 🏙️
+26 combinators ➕
+27 pseudo-classes ☟
+28 pseudo-elements ✔
+29 pagination 🕮
+30 dropdown menus 🔻
+31 navigation bar 🧭
+32 website layout 🗺️
+33 image gallery 📷
+34 icons 🐤
+35 flexbox 💪
+36 transformations 🔄
+37 animations 🎬 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My song lyrics</title>
+</head>
+<h1> 
+    <!-- Introduction to HTML 🌎 -->
+
+    <h1>This is h1 heading</h1>
+    <h2>This is h2 heading</h2>
+    <h3>This is h3 heading</h3>
+    <h4>This is h4 heading</h4>
+    <h5>This is h5 heading</h5>
+    <p>This is paragraph</p>
+    <hr>     <!-- add horizontal line across your page -->
+    <br>     <!-- this is line break -->
+
+
+    <h1>Tom's Diner</h1>
+    <h4> Song by American singer and songwriter Suzanne Vega.</h4>
+    <br> <br> 
+    <a href="https://www.youtube.com/watch?v=-26hsZqwveA"
+    target="_blank"
+    title="goes to YouTube"> 
+    <img src="Susanne.jpeg" height="300" alt="This album cover">
+    </a>
+ 
+    <hr>
+
+    <pre>
+        I am sitting in the morning at the diner on the corner
+        I am waiting at the counter for the man to pour the coffee
+        And he fills it only halfway, and before I even argue
+        He is looking out the window at somebody coming in
+        
+        "It is always nice to see you"
+        Says the man behind the counter to the woman who was coming
+        She is shaking her umbrella
+        
+        And I look the other way, as they are kissing their hello's
+        And I'm pretending not to see them
+        And instead I pour the milk
+    </pre>
+
+
+    <!-- hyperlinks 👈 -->
+
+    <a href="https://www.google.com" 
+    target="_blank" 
+    title="Goes to google"> 
+    Click me</a> 
+    <br />
+    <a href="mailto:test@fake.com">
+        email me
+    </a>
+
+    <br />
+    <br />
+
+    <!-- add images to webpage 🖼️ -->
+    <img src="Susanne.jpeg"
+    height="400" width="400"> 
+
+
+    <!-- audio 🔊 -->
+    <audio controls>
+        <source src="song.mp3" type="audio/mpeg">
+        <source src="song.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- video 🎥 -->
+    <video width="400" height="300" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Your browser does not support the video element.
+    </video>
+
+    <!-- favicons 🗿 -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- text formatting 💬 --> 
+    <br><br>
+    <p>This is normal text</p>
+    <p>This is <b>bold</b> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <u>underlined</u> text</p>
+    <p>This is <del>deleted</del> text</p>
+    <p>This is <big>big</big> text</p>
+    <p>This is ]<small>small</small> text</p>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <tt>monospaced</tt> text</p>
+    <p>This is <mark style="background-color:lightgreen"</mark> text</p>
+
+    <!-- span & div 🏁 -->
+    <h1><span style="background-color: orange;">This is span</span></h1>
+    <h1><div style="background-color: cyan;">This is div</div> </h1>
+
+
+    <!-- lists 📄 -->
+    <ul>
+        <li>This is list item 1</li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+    </ul>
+    <ol>
+        <li>This is list item 1</li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+    </ol>
+
+    <!-- tables 📊 -->
+    <h3>Store Hours </h3>
+    <table border="2" style="background-color:lightyellow">
+        <tr align="center" style="background-color:lightblue">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr align="center">
+            <td>9:00am</td>
+            <td>10:00am</td>
+            <td>11:00am</td>
+            <td>12:00pm</td>
+            <td>1:00pm</td>
+            <td>2:00pm</td>
+            <td>3:00pm</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- buttons 🔘 -->
+    <a href="https://open.spotify.com/album/0yo7vZCRuFxmNdOnpkjVx0"
+    target="_blank"> 
+    <button style="front-size: 25px; background-color: pink; color: blue; border-radius: 25px;">
+        Click me
+    </button>
+    </a>
+
+</body>
+</html>
