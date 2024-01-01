@@ -201,7 +201,7 @@
     </script>
 
     <!--forms 📝-->
-    <form action="index.php" method="POST"> 
+    <form action="index.php" method="POST" > 
         <label for="username">username:</label>
         <input type="text" id="username" placeholder="type your name here" minlength="6" maxlength="6" required>
         <br><br>
@@ -236,9 +236,9 @@
         <br><br>
         <label for="subscribe">subscribe</label>
         <input type="checkbox" id="subscribe" name="subscribe">
-        <br><br>
+        <!-- <br><br>
         <label for="comment">comment:</label>
-        <textarea id="comment" rows="30" cols="3"></textarea>
+        <textarea id="comment" rows="30" cols="3"></textarea> -->
         <br><br>
         <label for="file">file:</label>
         <input type="file" id="file" accept="image/png, image/jpeg" required>
@@ -246,11 +246,31 @@
         <br><br>
         <input type="reset">
         <input type="submit">
-
     </form>
 
+    <!-- headers & footers 🤯 -->
+    <header style="background-color: yellow ">
+        <h1>Welcome to my page</h1>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Products</a>
+        <a href="">Contact Us</a>
+        <hr>
+    </header>
 
+    <main>
+        <h4>Some text</h4>
+        <image src="DI.png" alt="picture" width="200"></image>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quae, enim delectus assumenda repellat et voluptatibus ullam, aspernatur vero mollitia veritatis eligendi quibusdam odio perspiciatis exercitationem eum! Autem, neque tempora!</p>
+    </main>
 
+    <footer style="background-color: aquamarine;">
+        <hr>
+        author: DI <br>
+        &copy; copyright: reserved</br>
+        <small><a href="mailto:example@fake.com">example@fake.com</a></small>
+
+    </footer>
 
 
 </body>
