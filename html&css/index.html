@@ -188,6 +188,70 @@
         Click me
     </button>
     </a>
+    <br><br>
+    
+    <!--execute button with JS-->
+    <button onclick="doSmth()" style="front-size: 25px; background-color: pink; color: blue; border-radius: 25px;">Execute with JS</button>
+    <p id="greeting">Hello</p>
+   
+    <script>
+        function doSmth() {
+            document.getElementById("greeting").innerHTML = "Button executed"
+        }
+    </script>
+
+    <!--forms 📝-->
+    <form action="index.php" method="POST"> 
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="type your name here" minlength="6" maxlength="6" required>
+        <br><br>
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="password here" minlength="6" maxlength="6" required>
+        <br><br>
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="example@gmail.com" required>
+        <br><br>
+        <label for="PhoneNumber">phone number:</label>
+        <input type="tel" id="PhoneNumber" placeholder="123-456-7890" required> 
+        <br><br>
+        <label for="birthday">birthday:</label>
+        <input type="date" id="bday" required>
+        <br><br>
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="1" max="10" required>
+        <br><br>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="PhD.">PhD.</label>
+        <input type="radio" id="PhD." value="PhD." name="title">
+        <br><br>
+        <label for="pament">payment</label>
+        <select id="payment">
+            <option value="cash">cash</option>
+            <option value="credit">credit</option>
+            <option value="debit">debit</option>
+        </select>
+        <br><br>
+        <label for="subscribe">subscribe</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <br><br>
+        <label for="comment">comment:</label>
+        <textarea id="comment" rows="30" cols="3"></textarea>
+        <br><br>
+        <label for="file">file:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg" required>
+
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+
+
+
+
 
 </body>
 </html>
